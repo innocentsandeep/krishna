@@ -1,0 +1,18 @@
+<html>
+<head>
+	<title>show all details</title>
+</head>
+<body>
+
+	<%@user.each do |u|%>		
+
+	<%= u.username%>
+	<%= link_to("update",{:controller=>"users",:action=>"update",:id=>u.id})%>
+	<%= link_to("delete",{:controller=>"users",:action=>"delete",:id=>u.id})%>
+	<br>
+	<%end%>
+	
+
+
+</body>
+</html>

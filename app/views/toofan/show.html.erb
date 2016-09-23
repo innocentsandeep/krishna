@@ -1,0 +1,16 @@
+<html>
+<head>
+	<title>show</title>
+</head>
+<body>
+	<%=@msg%>
+
+	<% @s.each do |u|%>
+	<%=u.username %>
+	<%= link_to("delete",{:controller=>"toofan",:action=>"delete",:id=>u.id})  %>
+	<%= link_to("update",{:controller=>"toofan",:action=>"update",:id=>u.id})  %><br>
+
+	<% end%>
+
+</body>
+</html>

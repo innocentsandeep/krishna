@@ -1,0 +1,2 @@
+module ToofanHelper
+end

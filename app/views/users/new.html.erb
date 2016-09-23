@@ -1,0 +1,15 @@
+<html>
+<head>
+	<title>login Page</title>
+</head>
+<body>
+
+	<%= form_for(:user,:url=>{:controller=>"users",:action=>"insert",:id=>@id}) do |f| -%>
+	username<%= f.text_field("username") %> <br>
+	password<%= f.text_field("password") %>  <br>
+
+	<%= submit_tag("login")%>
+	<% end -%>
+
+</body>
+</html>
